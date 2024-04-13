@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="cupcake">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aurora's Summer Sale</title>
+    <link rel="shortcut icon" href="./images/Summer 1.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary_clr': '#E527B2',
+                        'sec_clr': '#F9F6E2'
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Work Sans', sans-serif;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header class="bg-sec_clr">
+        <nav class="py-10 mx-20 md:mx-24 lg:mx-28 flex flex-col-reverse md:flex-row text-center ">
+            <div class="basis-1/2 flex flex-col justify-evenly">
+                <p class="text-base md:text-xl lg:text-2xl">---SALE FEVER---</p>
+                <p class="font-bold text-lg md:text-2xl lg:text-4xl">Purchase TK 200 or<br> above & get <span
+                        class="text-primary_clr">20% off</span></p>
+                <div class="flex flex-col lg:flex-row justify-center items-center gap-2">
+                    <p class="text-sm md:text-base lg:text-xl">Use Promo Code</p>
+                    <button class="btn rounded-md bg-primary_clr text-white">SELL200</button>
+                </div>
+            </div>
+            <div class="basis-1/2 flex flex-row justify-center md:justify-end">
+                <img class="h-auto w-4/6" src="./images/Summer 1.png" alt="">
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="py-10 mx-20 md:mx-24 lg:mx-28">
+            <div class="flex flex-col lg:flex-row gap-4">
+                <div class="basis-3/4 flex flex-col gap-8">
+                    <div class="flex flex-col">
+                        <p class="justify-self-start font-bold text-2xl">Kitchenware</p>
+                        <div class="flex flex-col md:flex-row justify-around gap-2">
+                            <div class="card_container flex flex-col rounded-md h-max w-auto md:w-1/3 bg-white shadow-xl gap-2 pb-4"
+                                onclick="add_item(this)">
+                                <div class="h-36 flex flex-row justify-center m-2 bg-gray-100 rounded-md">
+                                    <div>
+                                        <img class="" src="./images/prod1.png" alt="">
+                                    </div>
+
+                                </div>
+                                <div class="flex flex-row justify-center rating rating-sm rating-half">
+                                    <input type="radio" name="rating-10" class="rating-hidden" />
+                                    <input type="radio" name="rating-10"
+                                        class="bg-[#FFC107] mask mask-star-2 mask-half-1" />
+                                    <input type="radio" name="rating-10"
+                                        class="bg-[#FFC107] mask mask-star-2 mask-half-2" />
+                                    <input type="radio" name="rating-10"
+                                        class="bg-[#FFC107] mask mask-star-2 mask-half-1" />
+                                    <input type="radio" name="rating-10"
+                                        class="bg-[#FFC107] mask mask-star-2 mask-half-2" />
+                                    <input type="radio" name="rating-10"
+                                        class="bg-[#FFC107] mask mask-star-2 mask-half-1" />
+                                    <input type="radio" name="rating-10"
+                                        class="bg-[#FFC107] mask mask-star-2 mask-half-2" checked />
+                                    <input type="radio" name="rating-10"
+                                        class="bg-[#FFC107] mask mask-star-2 mask-half-1" />
+                                    <input type="radio" name="rating-10"
+                                        class="bg-[#FFC107] mask mask-star-2 mask-half-2" />
+                                    <input type="radio" name="rating-10"
+                                        class="bg-[#FFC107] mask mask-star-2 mask-half-1" />
+                                    <input type="radio" name="rating-10"
+                                        class="bg-[#FFC107] mask mask-star-2 mask-half-2" />
+                                </div>
+                                <div class="items-center text-center">
+                                    <h2 class="font-semibold text-base">K. Accessories 1</h2>
+                                    <p class="text-sm text-gray-400">39.00TK</p>
+                                </div>
+                            </div>
+                            <div class="card_container flex flex-col rounded-md h-max w-auto md:w-1/3 bg-white shadow-xl gap-2 pb-4"
+                                onclick="add_item(this)">
+                                <div class="h-36 flex flex-row justify-center m-2 bg-gray-100 rounded-md">
+                                    <div>
+                                        <img class="" src="./images/prod2.png" alt="">
+                                    </div>
+
+                                </div>
+                                <div class="flex flex-row justify-center rating rating-sm rating-half">
+                                    <input type="radio" name="rating_-10" class="rating-hidden" />
+                                    <input type="radio" name="rating_-10"
+                                        class="bg-[#FFC107] mask mask-star-2 mask-half-1" checked />
+                                    <input type="radio" name="rating_-10"
+                                        class="bg-[#FFC107] mask mask-star-2 mask-half-2" />
+                                    <input type="radio" name="rating_-10"
+                                        class="bg-[#FFC107] mask mask-star-2 mask-half-1" />
+                                    <input type="radio" name="rating_-10"
+                                        class="bg-[#FFC107] mask mask-star-2 mask-half-2" />
+                                    <input type="radio" name="rating_-10"
+                                        class="bg-[#FFC107] mask mask-star-2 mask-half-1" />
+                                    <input type="radio" name="rating_-10"
+                                        class="bg-[#FFC107] mask mask-star-2 mask-half-2" />
+                                    <input type="radio" name="rating_-10"
+                                        class="bg-[#FFC107] mask mask-star-2 mask-half-1" />
+                                    <input type="radio" name="rating_-10"
+                                        class="bg-[#FFC107] mask mask-star-2 mask-half-2" />
+                                    <input type="radio" name="rating_-10"
+                                        class="bg-[#FFC107] mask mask-star-2 mask-half-1" />
+                                    <input type="radio" name="rating_-10"
+                                        class="bg-[#FFC107] mask mask-star-2 mask-half-2" />
+                                </div>
+                                <div class="items-center text-center">
+                                    <h2 class="font-semibold text-base">K. Accessories 2</h2>
+                                    <p class="text-sm text-gray-400">25.00TK</p>
+                                </div>
+                            </div>
+                            <div class="card_container flex flex-col rounded-md h-max w-auto md:w-1/3 bg-white shadow-xl gap-2 pb-4"
+                                onclick="add_item(this)">
+                                <div class="h-36 flex flex-row justify-center m-2 bg-gray-100 rounded-md">
+                                    <div>
+                                        <img class="" src="./images/prod3.png" alt="">
+                                    </div>
+
+                                </div>
+                                <div class="flex flex-row justify-center rating rating-sm rating-half">
+                                    <input type="radio" name="rating__-10" class="rating-hidden" />
+                                    <input type="radio" name="rating__-10"
+                                        class="bg-[#FFC107] mask mask-star-2 mask-half-1" />
+                                    <input type="radio" name="rating__-10"
+                                        class="bg-[#FFC107] mask mask-star-2 mask-half-2" />
+                                    <input type="radio" name="rating__-10"
+                                        class="bg-[#FFC107] mask mask-star-2 mask-half-1" />
+                                    <input type="radio" name="rating__-10"
+                                        class="bg-[#FFC107] mask mask-star-2 mask-half-2" />
+                                    <input type="radio" name="rating__-10"
+                                        class="bg-[#FFC107] mask mask-star-2 mask-half-1" />
+                                    <input type="radio" name="rating__-10"
+                                        class="bg-[#FFC107] mask mask-star-2 mask-half-2" />
+                                    <input type="radio" name="rating__-10"
+                                        class="bg-[#FFC107] mask mask-star-2 mask-half-1" />
+                                    <input type="radio" name="rating__-10"
+                                        class="bg-[#FFC107] mask mask-star-2 mask-half-2" checked />
+                                    <input type="radio" name="rating__-10"
+                                        class="bg-[#FFC107] mask mask-star-2 mask-half-1" />
+                                    <input type="radio" name="rating__-10"
+                                        class="bg-[#FFC107] mask mask-star-2 mask-half-2" />
+                                </div>
+                                <div class="items-center text-center">
+                                    <h2 class="font-semibold text-base">Home Cooker</h2>
+                                    <p class="text-sm text-gray-400">49.00TK</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="flex flex-col">
+                        <p class="justify-self-start font-bold text-2xl">Sportswear</p>
+                        <div class="flex flex-col md:flex-row justify-around gap-2">
+                            <div class="card_container flex flex-col rounded-md h-max w-auto md:w-1/3 bg-white shadow-xl gap-2 pb-4"
+                                onclick="add_item(this)">
+                                <div class="h-36 flex flex-row justify-center m-2 bg-gray-100 rounded-md">
+                                    <div>
+                                        <img class="" src="./images/prod4.png" alt="">
+                                    </div>
+
+                                </div>
+                                <div class="flex flex-row justify-center rating rating-sm rating-half">
+                                    <input type="radio" name="rating___-10" class="rating-hidden" />
+                                    <input type="radio" name="rating___-10"
+                                        class="bg-[#FFC107] mask mask-star-2 mask-half-1" />
+                                    <input type="radio" name="rating___-10"
+                                        class="bg-[#FFC107] mask mask-star-2 mask-half-2" />
+                                    <input type="radio" name="rating___-10"
+                                        class="bg-[#FFC107] mask mask-star-2 mask-half-1" />
+                                    <input type="radio" name="rating___-10"
+                                        class="bg-[#FFC107] mask mask-star-2 mask-half-2" checked />
+                                    <input type="radio" name="rating___-10"
+                                        class="bg-[#FFC107] mask mask-star-2 mask-half-1" />
+                                    <input type="radio" name="rating___-10"
+                                        class="bg-[#FFC107] mask mask-star-2 mask-half-2" />
+                                    <input type="radio" name="rating___-10"
+                                        class="bg-[#FFC107] mask mask-star-2 mask-half-1" />
+                                    <input type="radio" name="rating___-10"
+                                        class="bg-[#FFC107] mask mask-star-2 mask-half-2" />
+                                    <input type="radio" name="rating___-10"
+                                        class="bg-[#FFC107] mask mask-star-2 mask-half-1" />
+                                    <input type="radio" name="rating___-10"
+                                        class="bg-[#FFC107] mask mask-star-2 mask-half-2" />
+                                </div>
+                                <div class="items-center text-center">
+                                    <h2 class="font-semibold text-base">Sports Back Cap</h2>
+                                    <p class="text-sm text-gray-400">49.00TK</p>
+                                </div>
+                            </div>
+                            <div class="card_container flex flex-col rounded-md h-max w-auto md:w-1/3 bg-white shadow-xl gap-2 pb-4"
+                                onclick="add_item(this)">
+                                <div class="h-36 flex flex-row justify-center m-2 bg-gray-100 rounded-md">
+                                    <div>
+                                        <img class="" src="./images/prod5.png" alt="">
+                                    </div>
+
+                                </div>
+                                <div class="flex flex-row justify-center rating rating-sm rating-half">
+                                    <input type="radio" name="rating____-10" class="rating-hidden" />
+                                    <input type="radio" name="rating____-10"
+                                        class="bg-[#FFC107] mask mask-star-2 mask-half-1" />
+                                    <input type="radio" name="rating____-10"
+                                        class="bg-[#FFC107] mask mask-star-2 mask-half-2" />
+                                    <input type="radio" name="rating____-10"
+                                        class="bg-[#FFC107] mask mask-star-2 mask-half-1" />
+                                    <input type="radio" name="rating____-10"
+                                        class="bg-[#FFC107] mask mask-star-2 mask-half-2" />
+                                    <input type="radio" name="rating____-10"
+                                        class="bg-[#FFC107] mask mask-star-2 mask-half-1" />
+                                    <input type="radio" name="rating____-10"
+                                        class="bg-[#FFC107] mask mask-star-2 mask-half-2" />
+                                    <input type="radio" name="rating____-10"
+                                        class="bg-[#FFC107] mask mask-star-2 mask-half-1" />
+                                    <input type="radio" name="rating____-10"
+                                        class="bg-[#FFC107] mask mask-star-2 mask-half-2" checked />
+                                    <input type="radio" name="rating____-10"
+                                        class="bg-[#FFC107] mask mask-star-2 mask-half-1" />
+                                    <input type="radio" name="rating____-10"
+                                        class="bg-[#FFC107] mask mask-star-2 mask-half-2" />
+                                </div>
+                                <div class="items-center text-center">
+                                    <h2 class="font-semibold text-base">Full Jersey Set</h2>
+                                    <p class="text-sm text-gray-400">69.00TK</p>
+                                </div>
+                            </div>
+                            <div class="card_container flex flex-col rounded-md h-max w-auto md:w-1/3 bg-white shadow-xl gap-2 pb-4"
+                                onclick="add_item(this)">
+                                <div class="h-36 flex flex-row justify-center m-2 bg-gray-100 rounded-md">
+                                    <div>
+                                        <img class="" src="./images/prod6.png" alt="">
+                                    </div>
+
+                                </div>
+                                <div class="flex flex-row justify-center rating rating-sm rating-half">
+                                    <input type="radio" name="rating_____-10" class="rating-hidden" />
+                                    <input type="radio" name="rating_____-10"
+                                        class="bg-[#FFC107] mask mask-star-2 mask-half-1" />
+                                    <input type="radio" name="rating_____-10"
+                                        class="bg-[#FFC107] mask mask-star-2 mask-half-2" />
+                                    <input type="radio" name="rating_____-10"
+                                        class="bg-[#FFC107] mask mask-star-2 mask-half-1" />
+                                    <input type="radio" name="rating_____-10"
+                                        class="bg-[#FFC107] mask mask-star-2 mask-half-2" />
+                                    <input type="radio" name="rating_____-10"
+                                        class="bg-[#FFC107] mask mask-star-2 mask-half-1" />
+                                    <input type="radio" name="rating_____-10"
+                                        class="bg-[#FFC107] mask mask-star-2 mask-half-2" checked />
+                                    <input type="radio" name="rating_____-10"
+                                        class="bg-[#FFC107] mask mask-star-2 mask-half-1" />
+                                    <input type="radio" name="rating_____-10"
+                                        class="bg-[#FFC107] mask mask-star-2 mask-half-2" />
+                                    <input type="radio" name="rating_____-10"
+                                        class="bg-[#FFC107] mask mask-star-2 mask-half-1" />
+                                    <input type="radio" name="rating_____-10"
+                                        class="bg-[#FFC107] mask mask-star-2 mask-half-2" />
+                                </div>
+                                <div class="items-center text-center">
+                                    <h2 class="font-semibold text-base">Sports cates</h2>
+                                    <p class="text-sm text-gray-400">159.00TK</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="flex flex-col">
+                        <p class="justify-self-start font-bold text-2xl">Furniture</p>
+                        <div class="flex flex-col md:flex-row justify-around gap-2">
+                            <div class="card_container flex flex-col rounded-md h-max w-auto md:w-1/3 bg-white shadow-xl gap-2 pb-4"
+                                onclick="add_item(this)">
+                                <div class="h-36 flex flex-row justify-center m-2 bg-gray-100 rounded-md">
+                                    <div>
+                                        <img class="" src="./images/prod7.png" alt="">
+                                    </div>
+
+                                </div>
+                                <div class="flex flex-row justify-center rating rating-sm rating-half">
+                                    <input type="radio" name="rating1-10" class="rating-hidden" />
+                                    <input type="radio" name="rating1-10"
+                                        class="bg-[#FFC107] mask mask-star-2 mask-half-1" />
+                                    <input type="radio" name="rating1-10"
+                                        class="bg-[#FFC107] mask mask-star-2 mask-half-2" />
+                                    <input type="radio" name="rating1-10"
+                                        class="bg-[#FFC107] mask mask-star-2 mask-half-1" />
+                                    <input type="radio" name="rating1-10"
+                                        class="bg-[#FFC107] mask mask-star-2 mask-half-2" />
+                                    <input type="radio" name="rating1-10"
+                                        class="bg-[#FFC107] mask mask-star-2 mask-half-1" />
+                                    <input type="radio" name="rating1-10"
+                                        class="bg-[#FFC107] mask mask-star-2 mask-half-2" />
+                                    <input type="radio" name="rating1-10"
+                                        class="bg-[#FFC107] mask mask-star-2 mask-half-1" />
+                                    <input type="radio" name="rating1-10"
+                                        class="bg-[#FFC107] mask mask-star-2 mask-half-2" checked />
+                                    <input type="radio" name="rating1-10"
+                                        class="bg-[#FFC107] mask mask-star-2 mask-half-1" />
+                                    <input type="radio" name="rating1-10"
+                                        class="bg-[#FFC107] mask mask-star-2 mask-half-2" />
+                                </div>
+                                <div class="items-center text-center">
+                                    <h2 class="font-semibold text-base">Single Relax Chair</h2>
+                                    <p class="text-sm text-gray-400">185.00TK</p>
+                                </div>
+                            </div>
+                            <div class="card_container flex flex-col rounded-md h-max w-auto md:w-1/3 bg-white shadow-xl gap-2 pb-4"
+                                onclick="add_item(this)">
+                                <div class="h-36 flex flex-row justify-center m-2 bg-gray-100 rounded-md">
+                                    <div>
+                                        <img class="" src="./images/prod8.png" alt="">
+                                    </div>
+
+                                </div>
+                                <div class="flex flex-row justify-center rating rating-sm rating-half">
+                                    <input type="radio" name="rating2-10" class="rating-hidden" />
+                                    <input type="radio" name="rating2-10"
+                                        class="bg-[#FFC107] mask mask-star-2 mask-half-1" />
+                                    <input type="radio" name="rating2-10"
+                                        class="bg-[#FFC107] mask mask-star-2 mask-half-2" />
+                                    <input type="radio" name="rating2-10"
+                                        class="bg-[#FFC107] mask mask-star-2 mask-half-1" />
+                                    <input type="radio" name="rating2-10"
+                                        class="bg-[#FFC107] mask mask-star-2 mask-half-2" />
+                                    <input type="radio" name="rating2-10"
+                                        class="bg-[#FFC107] mask mask-star-2 mask-half-1" />
+                                    <input type="radio" name="rating2-10"
+                                        class="bg-[#FFC107] mask mask-star-2 mask-half-2" />
+                                    <input type="radio" name="rating2-10"
+                                        class="bg-[#FFC107] mask mask-star-2 mask-half-1" />
+                                    <input type="radio" name="rating2-10"
+                                        class="bg-[#FFC107] mask mask-star-2 mask-half-2" />
+                                    <input type="radio" name="rating2-10"
+                                        class="bg-[#FFC107] mask mask-star-2 mask-half-1" />
+                                    <input type="radio" name="rating2-10"
+                                        class="bg-[#FFC107] mask mask-star-2 mask-half-2" />
+                                </div>
+                                <div class="items-center text-center">
+                                    <h2 class="font-semibold text-base">Children play</h2>
+                                    <p class="text-sm text-gray-400">299.00TK</p>
+                                </div>
+                            </div>
+                            <div class="card_container flex flex-col rounded-md h-max w-auto md:w-1/3 bg-white shadow-xl gap-2 pb-4"
+                                onclick="add_item(this)">
+                                <div class="h-36 flex flex-row justify-center m-2 bg-gray-100 rounded-md">
+                                    <div>
+                                        <img class="" src="./images/prod9.png" alt="">
+                                    </div>
+
+                                </div>
+                                <div class="flex flex-row justify-center rating rating-sm rating-half">
+                                    <input type="radio" name="rating3-10" class="rating-hidden" />
+                                    <input type="radio" name="rating3-10"
+                                        class="bg-[#FFC107] mask mask-star-2 mask-half-1" />
+                                    <input type="radio" name="rating3-10"
+                                        class="bg-[#FFC107] mask mask-star-2 mask-half-2" />
+                                    <input type="radio" name="rating3-10"
+                                        class="bg-[#FFC107] mask mask-star-2 mask-half-1" />
+                                    <input type="radio" name="rating3-10"
+                                        class="bg-[#FFC107] mask mask-star-2 mask-half-2" />
+                                    <input type="radio" name="rating3-10"
+                                        class="bg-[#FFC107] mask mask-star-2 mask-half-1" />
+                                    <input type="radio" name="rating3-10"
+                                        class="bg-[#FFC107] mask mask-star-2 mask-half-2" />
+                                    <input type="radio" name="rating3-10"
+                                        class="bg-[#FFC107] mask mask-star-2 mask-half-1" />
+                                    <input type="radio" name="rating3-10"
+                                        class="bg-[#FFC107] mask mask-star-2 mask-half-2" />
+                                    <input type="radio" name="rating3-10"
+                                        class="bg-[#FFC107] mask mask-star-2 mask-half-1" />
+                                    <input type="radio" name="rating3-10"
+                                        class="bg-[#FFC107] mask mask-star-2 mask-half-2" />
+                                </div>
+                                <div class="items-center text-center">
+                                    <h2 class="font-semibold text-base">Flexible Sofa</h2>
+                                    <p class="text-sm text-gray-400">339.00TK</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="basis-2/5 mt-8 ">
+                    <div class="h-auto w-auto bg-white rounded-md p-4 mb-8">
+                        <h2 class="flex justify-center lg:justify-start font-semibold text-base">Have coupon?</h2>
+                        <br>
+                        <div class="flex flex-center join" id="coupon_field">
+                            <input class=" w-11/12 input input-bordered rounded-md join-item" id="get_pass"
+                                placeholder="Coupon code" />
+                            <button class="w-2/6 btn join-item rounded-r-md bg-primary_clr text-white"
+                                onclick="coupon_generator()">Apply</button>
+                        </div>
+                    </div>
+                    <div class="h-auto w-auto bg-white rounded-md p-4">
+                        <div class="flex flex-col gap-2" id="items_purchase">
+                        </div>
+                        <div class="my-2 h-[0.1px] w-full bg-gray-300">
+                        </div>
+                        <div class="flex flex-col gap-2" id="calc">
+                            <p class="font-medium text-sm">Total price: <span class="text-sm text-gray-400"><span
+                                        id="price_change">00.00</span>TK</span></p>
+                            <p class="font-medium text-sm">Discount: <span class="text-sm text-gray-400"><span
+                                        id="disc">00.00</span>TK</span></p>
+                            <p class="font-medium text-sm" id="total">Total: <span class="text-sm text-gray-400"><span
+                                        id="last_amount">00.00</span>TK</span></p>
+                        </div>
+                        <div class="my-2 h-[0.1px] w-full bg-gray-300">
+                        </div>
+                        <div class="-mb-10 flex justify-center">
+                            <a href="#my_modal">
+                                <button class=" btn rounded-md bg-primary_clr text-white">Make Purchase</button>
+                            </a>
+                            <div class="modal" id="my_modal">
+                                <div class="modal-box">
+                                    <figure class="flex flex-row justify-center">
+                                        <img class="h-auto w-2/6" src="./images/congo.png" />
+                                    </figure>
+
+                                    <div class="flex flex-col text-center gap-4">
+                                        <h3 class="font-bold text-2xl">Congratulations</h3>
+                                        <p class="text-gray-500 text-sm">
+                                            You purchase the product</p>
+                                    </div>
+                                    <div class="modal-action flex flex-row justify-center">
+                                        <a href="#" class="btn rounded-md bg-primary_clr text-white" onclick="modal_gen()">Go Home</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+    </main>
+    <script src="./script.js"></script>
+</body>
+
+</html>
